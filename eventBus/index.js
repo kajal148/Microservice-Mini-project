@@ -11,6 +11,7 @@ app.post('/events',(req,res)=>{
     axios.post('http://localhost:8080/events',event);
     axios.post('http://localhost:8081/events',event);
     axios.post('http://localhost:4000/events',event); 
+    axios.post('http://localhost:8083/events',event);
 
     res.send({status:'OK'});
 
